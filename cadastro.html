@@ -7,7 +7,7 @@
     <link href="./bootstrap/projeto/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href=./style/custom.css">
     <link rel="stylesheet" href="./style/custom-form">
-    <title>Document</title>
+    <title>contatos</title>
 </head>
 <body>
 
@@ -51,18 +51,18 @@
 
                 <div class="row">
                     <div class="col">
-                        <label for="endereço" class="col-label-sm">Endereço completo</label>
+                        <label for="endereço" class="col-form-label col-form-label-sm">Endereço completo</label>
                         <input type="text" id="endereço" class="form-control" placeholder="Endereço completo">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <label for="Cidade" class="col-label-sm">Cidade</label>
-                        <input type="text" id="cidade" class="form-control" placeholder="digite uma cidade">
+                        <label for="Cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
                     </div>
                     <div class="col">
-                        <label for="estado" class="col-label-sm">Estado</label>
+                        <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
                         <select name="estado" id="estado" class="form-control">
                             <option value="">Selecione um estado</option>
                             <option value="sp">SP</option>
@@ -73,16 +73,16 @@
                             <option value="mg">MG</option>
                         </select>
                     </div>
-                </div>
-                <div class="col">
-                    <label for="cep" class="col-from-label col-form-label-sm">Cep</label>
+                    <div class="col">
+                        <label for="cep" class="col-from-label col-form-label-sm">CEP</label>
                         <input type="text" name="cep" id="cep" class="form-control">
+                    </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <label for="info" class="col-label-sm">Informações</label>
+                            <label for="info" class="col-form-label col-form-label-sm">Informações</label>
                             <textarea  class="form-control" name="informações" id="info" rows="5"></textarea>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     <div class="col">
                         <div class="form-check">
                             <input type="checkbox" name="promocionais" id="promocionais">
-                            <label for="promocionais" class="form-check-label">aceito receber mensagens promocionais</label>
+                            <label for="promocionais" class="form-check-label col-form-label-sm">Aceito receber mensagens promocionais</label>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
 
             </form>
 
-            <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades </p>
+            <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades.</p>
 
         </div> <!-- end .container! -->
     </section>
@@ -117,14 +117,18 @@
                     <h6>Preencha os campos para receber novidades e promocões</h6>
 
                     <form class="form-inline">
-                        <div class="form-group col-5">
-                            <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome">
-                        </div>
-                        <div class="form-group col-5">
-                            <input type="text" class="form-control form-control-sm mb-2" name="e-mail" placeholder="e-mail" required>
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome" required>
 
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="e-mail" placeholder="e-mail" required>
+                            </div>
+                            <div class="form group col-4">
+                                <button type="submit" class="btn btn-sm btn-success">receber novidades</button>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-success"> receber novidades</button>
                     </form>
 
                 </div>
